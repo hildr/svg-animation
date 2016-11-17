@@ -1,0 +1,289 @@
+#nine{
+	fill: #9F00E7;
+}
+
+#eight{
+	fill: #19A200;
+}
+
+#seven{
+	fill: #A20004;
+}
+
+#six{
+	fill: #E78E00;
+}
+
+#five{
+	fill: #73DAFF;
+}
+
+#four{
+	fill: #FF00F1;
+}
+
+#three{
+	fill: #00E776;
+}
+
+#two{
+	fill: #E6FF2E;
+}
+
+#one{
+	fill: #0800B9;
+}
+
+@keyframes rainbow{
+  0%{
+    fill:#73DAFF;
+  }
+  25%{
+    fill:#00E776;
+  }
+  50%{
+    fill:#FF00F1;
+  }
+  75%{
+  	fill:#0800B9;
+  }
+  100%{
+    fill:#E78E00;
+  }
+}
+
+#flower:hover #one{
+	animation: rainbow .5s infinite;
+}
+
+@keyframes two{
+  0%{
+    fill: #E78E00;
+  }
+  25%{
+    fill: #19A200;
+  }
+  50%{
+    fill: #FF00F1;
+  }
+  75%{
+  	fill: #E6FF2E;
+  }
+  100%{
+    fill: #00E776;
+  }
+}
+
+#flower:hover #two{
+	animation: two .5s infinite;
+}
+
+@keyframes three{
+  0%{
+    fill: #73DAFF;
+  }
+  25%{
+    fill: #E6FF2E;
+  }
+  50%{
+    fill: #9F00E7;
+  }
+  75%{
+  	fill: #E78E00;
+  }
+  100%{
+    fill: #FF00F1;
+  }
+}
+
+#flower:hover #three{
+	animation: three .5s infinite;
+}
+
+@keyframes four{
+  0%{
+    fill: #0800B9;
+  }
+  25%{
+    fill: #00E776;
+  }
+  50%{
+    fill: #73DAFF;
+  }
+  75%{
+  	fill: #A20004;
+  }
+  100%{
+    fill: #9F00E7;
+  }
+}
+
+#flower:hover #four{
+	animation: four .5s infinite;
+}
+
+@keyframes five{
+  0%{
+    fill: #19A200;
+  }
+  25%{
+    fill: #E78E00;
+  }
+  50%{
+    fill: #FF00F1;
+  }
+  75%{
+  	fill: #E6FF2E;
+  }
+  100%{
+    fill: #00E776;
+  }
+}
+
+#flower:hover #five{
+	animation: five .5s infinite;
+}
+
+@keyframes six{
+  0%{
+    fill: #9F00E7;
+  }
+  25%{
+    fill: #0800B9;
+  }
+  50%{
+    fill: #A20004;
+  }
+  75%{
+  	fill: #FF00F1;
+  }
+  100%{
+    fill: #73DAFF;
+  }
+}
+
+#flower:hover #six{
+	animation: six .5s infinite;
+}
+
+@keyframes seven{
+  0%{
+    fill: #E6FF2E;
+  }
+  25%{
+    fill: #FF00F1;
+  }
+  50%{
+    fill:#0800B9;
+  }
+  75%{
+  	fill: #00E776;
+  }
+  100%{
+    fill: #E78E00;
+  }
+}
+
+#flower:hover #seven{
+	animation: seven .5s infinite;
+}
+
+@keyframes eight{
+  0%{
+    fill: #73DAFF;
+  }
+  25%{
+    fill: #19A200;
+  }
+  50%{
+    fill: #FF00F1;
+  }
+  75%{
+  	fill: #A20004;
+  }
+  100%{
+    fill: #9F00E7;
+  }
+}
+
+#flower:hover #eight{
+	animation: eight .5s infinite;
+}
+
+@keyframes nine{
+  0%{
+    fill: #9F00E7;
+  }
+  25%{
+    fill: #0800B9;
+  }
+  50%{
+    fill: #19A200;
+  }
+  75%{
+  	fill: #E6FF2E;
+  }
+  100%{
+    fill: #E78E00;
+  }
+}
+
+#flower:hover #nine{
+	animation: nine .5s infinite;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes position{
+  0%{
+    left:0;
+  }
+  25%{
+    left: 50px;
+  }
+  75%{
+    left: 100px;
+  }
+  100%{
+    left: 150px;
+  }
+}
+
+
+#flower:hover{
+	position: fixed;
+  buttom: 0;
+  animation: spin 5s infinite alternate,
+  position 5s infinite alternate,
+  slide 2s linear infinite alternate;
+  }
+
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 180px;
+    top: 100px;
+  }
+  100% {
+    left: 300px;
+    top: 0;
+  }
+}
+.jump {
+  border-radius: 6px;
+  height: auto;
+  position: relative;
+  max-width: 200px;
+}
+
